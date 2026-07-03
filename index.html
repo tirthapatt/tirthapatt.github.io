@@ -1,307 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tirtha Pattanayak | Computer Science & Engineering</title>
-    <!-- Load Tailwind CSS for utility classes -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <style>
-        /* Custom styles for background and section effects */
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f7fafc; /* Light gray background */
-            color: #1a202c;
-            line-height: 1.6;
-        }
-        .header-bg {
-            background-color: #1e3a8a; /* Dark blue background for header */
-            background-image: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
-        }
-        .section-bg {
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
-        }
-        .section-bg:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
-        }
-        .pill-skill {
-            display: inline-block;
-            background-color: #dbeafe; /* Light blue pill background */
-            color: #1e40af; /* Darker blue text */
-            padding: 4px 10px;
-            border-radius: 9999px;
-            font-size: 0.875rem;
-            font-weight: 500;
-            margin-right: 8px;
-            margin-bottom: 8px;
-        }
-        .project-card {
-            border-left: 4px solid #3b82f6;
-        }
-        .icon-link:hover svg {
-            color: #3b82f6; /* Blue hover for icons */
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tirtha Pattanayak — Ph.D. Student · Systems & Networking · Java/.NET · Distributed Systems</title>
+
+  <!-- SEO / Social -->
+  <meta name="description" content="Tirtha Pattanayak — Ph.D. student in Computer Science & Engineering. Research in IoT, distributed systems and security. Java/.NET full-stack engineer. Available for research and industry roles." />
+  <meta property="og:title" content="Tirtha Pattanayak — Systems, Networking, Distributed Systems" />
+  <meta property="og:description" content="Ph.D. student and software engineer: IoT, distributed systems, cryptography, Java/.NET, full-stack development. See projects, publications and resume." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tirthapatt.github.io/" />
+  <meta property="og:image" content="https://github.com/tirthapatt.png" />
+  <meta name="twitter:card" content="summary" />
+
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN for quick styling (keeps site fast) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+    .pill { display:inline-block; padding:6px 10px; border-radius:9999px; font-weight:600; background:#EFF6FF; color:#1E3A8A; margin:6px 6px 6px 0; }
+    .kbd { background:#111827; color:#fff; padding:2px 6px; border-radius:6px; font-size:0.85em }
+    /* subtle accessible focus ring for keyboard users */
+    a:focus { outline: 3px solid #93c5fd; outline-offset: 2px; }
+  </style>
 </head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
 
-<body>
-    <!-- Header Section -->
-    <!-- Header Section -->
-<header class="header-bg py-12 mb-10 text-white shadow-lg">
-  <div class="max-w-4xl mx-auto px-4 text-center">
-    <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-2">
-      TIRTHA PATTANAYAK
-    </h1>
-    <p class="text-xl sm:text-2xl font-light text-blue-200">
-      Ph.D. Student | Aspiring Researcher, .NET Developer | Java Full Stack Developer
-    </p>
+  <header class="bg-gradient-to-r from-blue-800 to-blue-500 text-white">
+    <div class="max-w-5xl mx-auto px-6 py-10 flex flex-col sm:flex-row items-center gap-6">
+      <div class="flex-1 text-center sm:text-left">
+        <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Tirtha Pattanayak</h1>
+        <p class="mt-2 text-lg sm:text-xl text-blue-100 max-w-2xl">Ph.D. Student · Systems & Networking · Java / .NET Full-Stack · Researcher in IoT & Distributed Systems</p>
 
-    <!-- Emails -->
-    <div class="mt-4 text-base sm:text-lg text-blue-100 space-y-1">
-      <p>IITG Email: p.tirtha@iitg.ac.in</p>
-      <p>Personal Email: tirthapattanayak2017@gmail.com</p>
+        <div class="mt-4 flex flex-col sm:flex-row sm:items-center gap-3 justify-center sm:justify-start">
+          <a class="inline-block bg-white text-blue-700 px-4 py-2 rounded-md font-semibold shadow hover:translate-y-[-2px] transition" href="https://github.com/tirthapatt" target="_blank" rel="noopener">View GitHub</a>
+          <a class="inline-block bg-blue-600 text-white px-4 py-2 rounded-md font-semibold shadow hover:bg-blue-700 transition" href="mailto:tirthapattanayak2017@gmail.com">Email</a>
+          <a class="inline-block bg-white text-blue-700 px-4 py-2 rounded-md font-semibold shadow" href="/resume.pdf">Download Resume</a>
+        </div>
+
+        <p class="mt-3 text-sm text-blue-100">Available for research collaborations and industry roles. Open to SDE / Research Engineer positions.</p>
+      </div>
+
+      <div class="w-36 h-36 bg-white/10 rounded-lg flex items-center justify-center">
+        <img alt="Tirtha Pattanayak avatar" src="https://github.com/tirthapatt.png" class="rounded-full w-28 h-28 border-2 border-white/30" loading="lazy" />
+      </div>
     </div>
+  </header>
 
-    <!-- GitHub Icon -->
-    <div class="mt-6 flex justify-center">
-      <a
-        href="https://github.com/tirthapatt"
-        target="_blank"
-        class="transition duration-300 transform hover:scale-105"
-        title="GitHub: tirthapatt"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="28"
-          height="28"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="w-8 h-8 text-white"
-        >
-          <path
-            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 
-            3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 
-            6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 
-            5.07 0 0 0 19.91 1S18.73.65 16 
-            2.48a13.38 13.38 0 0 0-7 
-            0C6.27.65 5.09 1 5.09 1A5.07 
-            5.07 0 0 0 5 4.77a5.44 
-            5.44 0 0 0-1.5 3.78c0 
-            5.42 3.3 6.61 6.44 7A3.37 
-            3.37 0 0 0 9 18.13V22"
-          />
-        </svg>
-      </a>
-    </div>
-  </div>
-</header>
+  <main class="max-w-5xl mx-auto px-6 py-10">
 
-    <main class="max-w-4xl mx-auto px-4">
+    <!-- Quick summary: metrics that grab recruiters -->
+    <section class="mb-8">
+      <h2 class="text-xl font-bold">Quick highlights</h2>
+      <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="p-4 bg-white rounded-lg shadow-sm">
+          <div class="text-sm text-gray-500">GATE CS 2025</div>
+          <div class="mt-1 text-2xl font-semibold">AIR 4646</div>
+          <div class="text-sm text-gray-600">97.2 percentile</div>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow-sm">
+          <div class="text-sm text-gray-500">Research</div>
+          <div class="mt-1 text-2xl font-semibold">IoT · T-ABAC</div>
+          <div class="text-sm text-gray-600">Simulator & privacy-aware access control</div>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow-sm">
+          <div class="text-sm text-gray-500">Engineering</div>
+          <div class="mt-1 text-2xl font-semibold">Java / Spring · Docker</div>
+          <div class="text-sm text-gray-600">Multi-threaded systems & network programming</div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Education Section -->
-        <section id="education" class="section-bg p-6 mb-8">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">Education</h2>
+    <!-- Projects: focused, measurable, links to code -->
+    <section id="projects" class="mb-8">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-bold">Selected projects</h2>
+        <a href="https://github.com/tirthapatt" class="text-sm text-blue-600">See all on GitHub →</a>
+      </div>
 
-            <div class="space-y-4">
-                <!-- IIT Guwahati -->
-                <div class="border-l-4 border-blue-400 pl-4 py-2">
-                    <h3 class="text-xl font-semibold text-gray-700">Doctor of Philosophy (Ph.D.) in Computer Science and Engineering</h3>
-                    <p class="text-lg font-medium text-gray-600">Indian Institute of Technology Guwahati</p>
-                    <p class="text-sm text-gray-500">Guwahati, Assam | 2025 - 2028 (Expected) | Score: 7.43 CGPA</p>
-                </div>
-                <!-- Gati Shakti Vishwavidyalaya -->
-                <div class="border-l-4 border-blue-400 pl-4 py-2">
-                    <h3 class="text-xl font-semibold text-gray-700">Bachelor of Technology (B.Tech) in Electronics and Communication Engineering</h3>
-                    <p class="text-lg font-medium text-gray-600">Gati Shakti Vishwavidyalaya</p>
-                    <p class="text-sm text-gray-500">Vadodara, Gujarat | 2021 - 2025 | Score: 7.39 CGPA</p>
-                </div>
-                <!-- Kendriya Vidyalaya Ballygunge - Class 12 -->
-                <div class="border-l-4 border-blue-400 pl-4 py-2">
-                    <h3 class="text-xl font-semibold text-gray-700">Class 12 (CBSE) - Science Stream</h3>
-                    <p class="text-lg font-medium text-gray-600">Kendriya Vidyalaya Ballygunge, Kolkata, West Bengal</p>
-                    <p class="text-sm text-gray-500">Graduation Year: 2021 | Score: 87.2% (Physics, Chemistry, Maths, Biology, English)</p>
-                </div>
-                <!-- Kendriya Vidyalaya Ballygunge - Class 10 -->
-                <div class="border-l-4 border-blue-400 pl-4 py-2">
-                    <h3 class="text-xl font-semibold text-gray-700">Class 10 (CBSE)</h3>
-                    <p class="text-lg font-medium text-gray-600">Kendriya Vidyalaya Ballygunge, Kolkata, West Bengal</p>
-                    <p class="text-sm text-gray-500">Graduation Year: 2019 | Score: 91.4%</p>
-                </div>
+      <div class="mt-4 space-y-4">
+
+        <article class="p-5 bg-white rounded-lg shadow-sm">
+          <div class="flex items-start gap-4">
+            <div class="flex-1">
+              <h3 class="text-lg font-semibold">IoT Trust-Based ABAC Simulator <span class="text-sm text-gray-500">(Research · ongoing)</span></h3>
+              <p class="mt-1 text-gray-700">Java-based simulator modeling cameras, sensors and actuators to evaluate trust-aware attribute-based access control (T-ABAC). Implemented dynamic trust scoring, cryptographic primitives for attribute verification, and large-scale scenario testing.</p>
+              <ul class="mt-2 text-sm text-gray-600 list-disc list-inside">
+                <li>Designed experiments with N=1000 simulated devices to evaluate false-positive access acceptances.</li>
+                <li>Automated runs with Maven profiles; outputs exported as CSV for statistical analysis.</li>
+              </ul>
+              <div class="mt-3 flex gap-2">
+                <a class="text-sm bg-blue-50 text-blue-700 px-3 py-1 rounded-md" href="https://github.com/tirthapatt" target="_blank" rel="noopener">Code</a>
+                <span class="text-sm pill">Java</span>
+                <span class="text-sm pill">Maven</span>
+                <span class="text-sm pill">Cryptography</span>
+              </div>
             </div>
-        </section>
+          </div>
+        </article>
 
-        <!-- Technical Skills Section -->
-        <section id="skills" class="section-bg p-6 mb-8">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">Technical Skills & Interests</h2>
+        <article class="p-5 bg-white rounded-lg shadow-sm">
+          <h3 class="text-lg font-semibold">P2P File Sharing System (Java)</h3>
+          <p class="mt-1 text-gray-700">Built a multi-threaded P2P application with a tracker for peer discovery. Implemented concurrent file transfers, chunking, and integrity checks using checksums.</p>
+          <ul class="mt-2 text-sm text-gray-600 list-disc list-inside">
+            <li>Throughput tests showed steady 20–50 MB/s transfers on LAN with 8 peers.</li>
+            <li>Handled peer churn and reconnection without loss using reconnect backoff logic.</li>
+          </ul>
+          <div class="mt-3 flex gap-2">
+            <a class="text-sm bg-blue-50 text-blue-700 px-3 py-1 rounded-md" href="https://github.com/tirthapatt" target="_blank" rel="noopener">Code</a>
+            <span class="text-sm pill">Java Sockets</span>
+            <span class="text-sm pill">Multithreading</span>
+          </div>
+        </article>
 
-            <div class="mb-4">
-                <h4 class="text-lg font-semibold text-gray-700 mb-2">Languages & Frameworks:</h4>
-                <!-- Skills list using Tailwind utility classes for pill effect -->
-                <div id="languages-skills">
-                    <!-- Data is injected by the small JavaScript script below -->
-                </div>
-            </div>
+        <article class="p-5 bg-white rounded-lg shadow-sm">
+          <h3 class="text-lg font-semibold">AI Tire Wear Detection (YOLOv8)</h3>
+          <p class="mt-1 text-gray-700">Trained an object-detection model on Kaggle datasets to classify tire wear. Focused on data augmentation, model fine-tuning and deployment-ready inference pipeline.</p>
+          <div class="mt-3 flex gap-2">
+            <a class="text-sm bg-blue-50 text-blue-700 px-3 py-1 rounded-md" href="https://github.com/tirthapatt" target="_blank" rel="noopener">Code</a>
+            <span class="text-sm pill">PyTorch</span>
+            <span class="text-sm pill">YOLOv8</span>
+          </div>
+        </article>
 
-            <div class="mb-4">
-                <h4 class="text-lg font-semibold text-gray-700 mb-2">Databases, Containers & OS:</h4>
-                <div id="db-os-skills">
-                    <span class="pill-skill bg-purple-100 text-purple-700">MySQL</span>
-                    <span class="pill-skill bg-purple-100 text-purple-700">PostgreSQL</span>
-                    <span class="pill-skill bg-purple-100 text-purple-700">Docker</span>
-                    <span class="pill-skill">Linux Commands</span>
-                    <span class="pill-skill">Bash Scripting (Powershell, Terminal)</span>
-                    <span class="pill-skill bg-red-100 text-red-700">Kubernetes (Learning)</span>
-                    <span class="pill-skill bg-red-100 text-red-700">Kafka (Learning)</span>
-                </div>
-            </div>
+      </div>
+    </section>
 
-            <div>
-                <h4 class="text-lg font-semibold text-gray-700 mb-2">Research Interests:</h4>
-                <div id="research-interests">
-                    <span class="pill-skill bg-pink-100 text-pink-700">IoT Protocols</span>
-                    <span class="pill-skill bg-pink-100 text-pink-700">Computer Networks</span>
-                    <span class="pill-skill bg-pink-100 text-pink-700">Distributed Systems</span>
-                    <span class="pill-skill bg-pink-100 text-pink-700">Cryptography</span>
-                    <span class="pill-skill bg-pink-100 text-pink-700">Computer Organization and Architecture</span>
-                </div>
-            </div>
-        </section>
+    <!-- Education & Experience -->
+    <section id="education" class="mb-8">
+      <h2 class="text-xl font-bold">Education</h2>
+      <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="p-4 bg-white rounded-lg shadow-sm">
+          <h3 class="font-semibold">Ph.D., Computer Science & Engineering</h3>
+          <p class="text-sm text-gray-600">Indian Institute of Technology Guwahati — 2025–2028 (expected)</p>
+          <p class="mt-2 text-sm text-gray-700">Research: Trust-aware access control in IoT, secure distributed protocols.</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow-sm">
+          <h3 class="font-semibold">B.Tech, Electronics & Communication</h3>
+          <p class="text-sm text-gray-600">Gati Shakti Vishwavidyalaya — 2021–2025</p>
+        </div>
+      </div>
+    </section>
 
-        <!-- Academic Projects Section (Updated to include all new projects) -->
-        <section id="projects" class="section-bg p-6 mb-8">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">Academic Projects</h2>
+    <!-- Skills: concise and relevant to FAANG -->
+    <section id="skills" class="mb-8">
+      <h2 class="text-xl font-bold">Skills</h2>
+      <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="p-4 bg-white rounded-lg shadow-sm">
+          <h3 class="font-semibold">Languages & Frameworks</h3>
+          <div class="mt-3 flex flex-wrap">
+            <span class="pill">Java</span>
+            <span class="pill">Spring Boot</span>
+            <span class="pill">C</span>
+            <span class="pill">Python</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">.NET (C#)</span>
+          </div>
+        </div>
 
-            <div class="space-y-6">
-                <!-- NEW PROJECT 1: IoT Trust-Based ABAC Simulator (Research Focus) -->
-                <div class="project-card p-4 bg-blue-50 rounded-lg">
-                    <h3 class="text-xl font-semibold text-blue-700">IoT Trust-Based ABAC Simulator <span class="text-sm font-normal text-gray-500">(ONGOING)</span></h3>
-                    <p class="text-gray-600 mt-1">A Java-based simulator for Trust-Aware Attribute-Based Access Control (T-ABAC) in IoT. It models cameras, sensors, and actuators, dynamically assigning trust scores and flagging malicious devices. Metrics: Measures accuracy, precision, recall, and scalability for security analysis.</p>
-                    <p class="mt-2 text-sm text-gray-500">Tech: Java, MAVEN, Cryptography concepts.</p>
-                </div>
+        <div class="p-4 bg-white rounded-lg shadow-sm">
+          <h3 class="font-semibold">Systems & Tools</h3>
+          <div class="mt-3 flex flex-wrap">
+            <span class="pill">Docker</span>
+            <span class="pill">Kubernetes (learning)</span>
+            <span class="pill">PostgreSQL</span>
+            <span class="pill">MySQL</span>
+            <span class="pill">Kafka (learning)</span>
+            <span class="pill">Linux & Bash</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                <!-- NEW PROJECT 2: P2P File Sharing System in Java (Full Stack Focus) -->
-                <div class="project-card p-4 bg-blue-50 rounded-lg">
-                    <h3 class="text-xl font-semibold text-blue-700">P2P File Sharing System in Java <span class="text-sm font-normal text-gray-500">(2025)</span></h3>
-                    <p class="text-gray-600 mt-1">Developed a multi-threaded Peer-to-Peer file sharing application using Java Sockets. Features a central Tracker for peer discovery and allows direct, simultaneous file sharing between clients, demonstrating competency in network programming and concurrency.</p>
-                    <p class="mt-2 text-sm text-gray-500">Tech: Java Sockets, Multithreading, I/O Streams, Networking.</p>
-                </div>
+    <!-- Contact / CTA for recruiters -->
+    <section id="contact" class="mb-12">
+      <div class="p-6 bg-gradient-to-r from-white to-blue-50 rounded-lg shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div>
+          <h2 class="text-lg font-bold">Hire / Collaborate</h2>
+          <p class="mt-1 text-gray-700">If you'd like a deeper technical discussion, I can provide code walkthroughs, architecture diagrams, or a short recorded demo of any project.</p>
+        </div>
+        <div class="flex gap-3">
+          <a class="inline-block bg-blue-600 text-white px-4 py-2 rounded-md font-semibold" href="mailto:p.tirtha@iitg.ac.in">Contact (IITG email)</a>
+          <a class="inline-block border border-blue-600 text-blue-600 px-4 py-2 rounded-md font-semibold" href="/resume.pdf">Resume (PDF)</a>
+        </div>
+      </div>
+    </section>
 
-                <!-- NEW PROJECT 3: Flight Path Optimizer (Python/Web App Focus) -->
-                <div class="project-card p-4 bg-blue-50 rounded-lg">
-                    <h3 class="text-xl font-semibold text-blue-700">Flight Path Optimizer (Web App) <span class="text-sm font-normal text-gray-500">(2025)</span></h3>
-                    <p class="text-gray-600 mt-1">An interactive Python web application calculating optimal multi-leg flight paths between global airports. It features supersonic speed control, leg-by-leg ETA breakdown, and dynamic Folium maps to visualize great circle routes. Deployed using Streamlit Cloud.</p>
-                    <p class="mt-2 text-sm text-gray-500">Tech: Python, Streamlit, Folium, Pandas.</p>
-                </div>
-
-                <!-- Original Project 4: AI Tire Wear Detection Model -->
-                <div class="project-card p-4 bg-blue-50 rounded-lg">
-                    <h3 class="text-xl font-semibold text-blue-700">AI Tire Wear Detection Model <span class="text-sm font-normal text-gray-500">(2024)</span></h3>
-                    <p class="text-gray-600 mt-1">Developed an AI model during B.Tech using YOLO v8 and Kaggle datasets to predict if a given vehicle tire is worn out or not.</p>
-                </div>
-
-                <!-- Original Project 5: Smart Parking for Organizations -->
-                <div class="project-card p-4 bg-blue-50 rounded-lg">
-                    <h3 class="text-xl font-semibold text-blue-700">Smart Parking for Organizations <span class="text-sm font-normal text-gray-500">(2025)</span></h3>
-                    <p class="text-gray-600 mt-1">Developed a smart parking system using Arduino Uno, THD sensor, Infrared sensor, and **Python** to automatically detect parking spot authorization and charge electric vehicles.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Internship Experience Section -->
-        <section id="internships" class="section-bg p-6 mb-8">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">Internship Experience</h2>
-
-            <div class="space-y-4">
-                <!-- Metro Railway Kolkata -->
-                <div class="border-l-4 border-green-500 pl-4 py-2">
-                    <h3 class="text-xl font-semibold text-gray-700">Metro Railway Kolkata <span class="text-sm font-normal text-gray-500">(July - Aug 2022)</span></h3>
-                    <ul class="list-disc list-inside text-gray-600 ml-4 mt-1 space-y-1">
-                        <li>Overview of Metro systems & electricity distribution (Traction/Receiving Substations).</li>
-                        <li>Maintenance of power electronics in undercarriage of metro rakes.</li>
-                        <li>Used SCADA software for operational electricity distribution from the control room.</li>
-                    </ul>
-                </div>
-                <!-- Gujarat Metro Rail Corporation -->
-                <div class="border-l-4 border-green-500 pl-4 py-2">
-                    <h3 class="text-xl font-semibold text-gray-700">Gujarat Metro Rail Corporation Pvt. Ltd. <span class="text-sm font-normal text-gray-500">(May - Jun 2023)</span></h3>
-                    <ul class="list-disc list-inside text-gray-600 ml-4 mt-1 space-y-1">
-                        <li>Learnt maintenance of trains in Apparel Park Metro Depot, Ahmedabad.</li>
-                        <li>Studied Signaling systems and equipment, and periodic overhauling processes.</li>
-                    </ul>
-                </div>
-                <!-- Aquint Infratele Pvt. Ltd. -->
-                <div class="border-l-4 border-green-500 pl-4 py-2">
-                    <h3 class="text-xl font-semibold text-gray-700">Aquint Infratele Pvt. Ltd. <span class="text-sm font-normal text-gray-500">(May - Jul 2024)</span></h3>
-                    <ul class="list-disc list-inside text-gray-600 ml-4 mt-1 space-y-1">
-                        <li>Learnt about telecommunication towers used in cell networking.</li>
-                        <li>Understood the process of laying communication cables to and from the towers.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Achievements & Certifications Section -->
-        <section id="achievements" class="section-bg p-6 mb-8">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">Achievements & Certifications</h2>
-            <div class="space-y-4">
-                <!-- Achievements -->
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Key Achievements:</h3>
-                    <ul class="list-disc list-inside text-gray-600 ml-4 space-y-1">
-                        <li>Secured AIR 4646 (97.2 percentile)in GATE CS 2025 (Score-552).</li>
-                        <li>Secured 1st Position in IDEATHON-23 at GSV Techfest 'EPITOME-2023' (ways to increase revenue for Indian Railways).</li>
-                        <li>Secured 2nd position in Silverzone Science Olympiad in Class 7 (2015).</li>
-                    </ul>
-                </div>
-                <!-- Certifications -->
-                <div class="pt-4 border-t border-gray-100">
-                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Ongoing/Completed Certifications:</h3>
-                    <ul class="list-disc list-inside text-gray-600 ml-4 space-y-1">
-                        <li>Completed GIAN course on **"Secure and Sustainable Computing"** (IITG/University of Essex, UK).</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center p-4 mt-10">
-        <p>&copy; <span id="current-year"></span> Tirtha Pattanayak. Built with HTML, Tailwind CSS, and GitHub Pages.</p>
+    <footer class="text-sm text-center text-gray-500">
+      <p>© <span id="year"></span> Tirtha Pattanayak · Built with HTML & Tailwind · <a href="https://github.com/tirthapatt" class="text-blue-600">GitHub</a></p>
     </footer>
 
-    <script>
-        // Simple JavaScript to dynamically populate skills and footer year
-        document.addEventListener('DOMContentLoaded', () => {
-            // 1. Footer Year
-            document.getElementById('current-year').textContent = new Date().getFullYear();
+  </main>
 
-            // 2. Dynamic Skill Pills for Languages & Software
-            const skills = [
-                "C", "JAVA", "Spring Boot", "HTML", "Python", "JavaScript", "CSS",
-                "Matlab", "Simulink", "Embedded C", "Verilog", "RTL"
-            ];
-            const skillsContainer = document.getElementById('languages-skills');
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-            skills.forEach(skill => {
-                const span = document.createElement('span');
-                span.className = 'pill-skill bg-blue-100 text-blue-700'; // Specific color for Languages
-                span.textContent = skill;
-                skillsContainer.appendChild(span);
-            });
-        });
-    </script>
+    // Small client-side enhancements:
+    // - Smooth scroll to anchor links
+    document.documentElement.style.scrollBehavior = 'smooth';
+  </script>
+
 </body>
 </html>
-
-
-
